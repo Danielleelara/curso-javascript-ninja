@@ -22,7 +22,7 @@ no primeiro parâmetro. O índice usado para retornar o valor, deve ser o númer
 segundo parâmetro.
 */
 // function doisParametros(array, x){
-   return array[1];
+   return array[x];
    }
    console.log(doisParametros(casa, 2));
 
@@ -35,7 +35,11 @@ Declare uma variável que recebe um array com 5 valores, de tipos diferentes.
 Invoque a função criada acima, fazendo-a retornar todos os valores do último
 array criado.
 */
-// console.log(myFunction(amor));
+// console.log(doisParametros(amor, 0) ) ;
+console.log(doisParametros(amor, 1) ) ;
+console.log(doisParametros(amor, 2) ) ;
+console.log(doisParametros(amor, 3) ) ;
+console.log(doisParametros(amor, 4) ) ;
 
 /*
 Crie uma função chamada `book`, que recebe um parâmetro, que será o nome do
@@ -84,20 +88,19 @@ Usando a função criada acima, imprima o objeto com todos os livros.
 Ainda com a função acima, imprima a quantidade de páginas de um livro qualquer,
 usando a frase:
 "O livro [NOME_DO_LIVRO] tem [X] páginas!"
-*/
-// console.log(book('poliana').quantidadePaginas);
 
-
+var bookName = "Poliana";
+console.log("O livro "+ bookName  + " tem "+ (bookName).quantidadePaginas + " páginas!");
 /*
 Ainda com a função acima, imprima o nome do autor de um livro qualquer, usando
 a frase:
 "O autor do livro [NOME_DO_LIVRO] é [AUTOR]."
 */
-// ?
+// console.log("O autor do livro "+ bookName  + " é "+ book(bookName).autor + "!");
 
 /*
 Ainda com a função acima, imprima o nome da editora de um livro qualquer, usando
 a frase:
 "O livro [NOME_DO_LIVRO] foi publicado pela editora [NOME_DA_EDITORA]."
 */
-// ?
+// console.log("O livro "+ bookName  + " foi publicado pela editora "+ book(bookName).editora + "!");

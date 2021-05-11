@@ -4,7 +4,8 @@ para começar o desafio.
 Declare uma variável chamada `championship` que receberá o nome do campeonato,
 e imprima o nome desse campeonato no console.
 */
-// ?
+var championship = "Copa do Mundo";
+console.log(championship);
 
 /*
 Declare uma variável chamada `teams`, que receberá um array com 5 elementos.
@@ -12,7 +13,7 @@ Os elementos serão nomes de times do campeonato escolhido, e os nomes devem
 estar na ordem em que eles aparecem na tabela no momento da solução desse
 desafio.
 */
-// ?
+// var teams = ["Brasil", "Argentina", "Dinamarca", "Japão", "Itália"];
 
 console.log( 'Times que estão participando do campeonato:', teams );
 
@@ -32,19 +33,49 @@ Crie uma função chamada `showTeamPosition` com as seguintes características:
     - Se não houver time para a posição passada, deve retornar a mensagem:
     "Não temos a informação do time que está nessa posição."
 */
-// ?
+// function showTeamPosition(numero){
+
+  switch(numero){
+    
+    case 1: 1
+        console.log("O time que está em "+ numero + "º lugar é o " + teams[numero]);
+    break;
+    
+    case 2: 2
+        console.log("O time que está em "+ numero + "º lugar é o " + teams[numero]);
+    break;
+
+    case 3: 3
+        console.log("O time que está em "+ numero + "º lugar é o " + teams[numero]);
+    break;
+
+    case 4: 4
+        console.log("O time que está em "+ numero + "º lugar é o " + teams[numero]);
+    break;
+   
+    default:
+        console.log("Não temos a informação do time que está nessa posição.");
+  }
+}
 
 /*
 Escolha 4 times do campeonato selecionado e mostre a posição dele, usando a
 função acima. Entre esses 4, adicione 1 que não esteja entre os 5 primeiros.
 */
-// ?
+// showTeamPosition(1);
+showTeamPosition(2);
+showTeamPosition(3);
+showTeamPosition(4);
+showTeamPosition(5);
 
 /*
 Mostre os números de 20 a 30 no console (inclusive o 30), usando a estrutura de
 repetição "while".
 */
-// ?
+// var numero = 20;
+  while (numero < 31){
+    console.log(numero++);
+}
 
 /*
 Crie uma função chamada `convertToHex`, com as seguintes características:
